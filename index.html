@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+<link rel="stylesheet" href="./styles/output.css">
+<link rel="stylesheet" href="./styles/global.css">
+
+    <title>Gerenciador de Despesas</title>
+</head>
+<body>
+    <!--class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center"-->
+    <header class="w-full h-[420px]">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <h1  class="text-4xl mt-4 mb-2 font-bold text-green-600">Gerenciador de Despesas</h1>
+            <main class="max-w-xl w-full flex flex-col items-center"> 
+                <!--RESUMOS-->
+                <div class="resume flex py-2 gap-10 w-full justify-center flex-wrap">
+                    <div class="flex flex-col shadow-md rounded-lg p-2 w-36">
+                        <p>Entradas: R$</p>
+                        <span class="incomes">0.00</span>
+                    </div>
+                    <div class="flex flex-col shadow-md rounded-lg p-2 w-36">
+                        <p>Saídas: R$</p>
+                        <span class="expenses">0.00</span>
+                    </div>
+                    <div class="flex flex-col shadow-md rounded-lg p-2 w-36">
+                        <p>Total: R$</p>
+                        <span class="total">0.00</span>
+                    </div>
+                </div>
+                <br>
+                  <!--ITENS-->
+                <div class="newItem flex items-end w-full justify-center flex-wrap">
+                    <div  class="desc flex flex-col rounded-lg p-2 w-36">
+                        <label for="desc">Descrição</label>
+                        <input class="border border-gray-900 rounded p-1.5" type="text" id="desc">
+                    </div>
+                    <div  class="valores flex flex-col rounded-lg p-2 w-36">
+                        <label for="valores">Valor</label>
+                        <input class="border border-gray-900 rounded p-1.5" type="number" id="valores">
+                    </div>
+                    <div class="type flex flex-col rounded-lg p-2 w-36">
+                        <label for="type">Tipo</label>
+                        <select class="border border-gray-900 rounded p-1.5" id="type">
+                            <option>Entrada</option>
+                            <option>Saida</option>
+                        </select>
+                    </div> 
+                    <div class="flex flex-col rounded-lg p-2 w-36">
+                        <button class="bg-blue-600 text-white border-none px-4 rounded cursor-pointer h-8 font-bold" id="btnNew">Incluir</button>
+                    </div>
+                </div>
+                <!--TABELA-->
+                <div class="divtable w-full flex justify-center">
+                    <table class="w-[98%] py-5 rounded"> 
+                        <thead>
+                            <tr>
+                                <th class="text-left border-b pb-1.5">Descrição</th>
+                                <th class="columnAmount text-left border-b pb-1.5">Valor</th>
+                                <th class="columnType text-left border-b pb-1.5">Tipo</th>
+                                <th class="columnAction text-left border-b pb-1.5"></th>
+                            </tr>
+                        </thead>
+                        <tbody> 
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+          </div>
+    </header>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

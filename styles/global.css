@@ -1,0 +1,33 @@
+
+
+
+i {
+    font-size: 25px;
+  }
+  
+  .bxs-chevron-up-circle {
+    color: #00C9A7;
+  }
+  
+  .bxs-chevron-down-circle {
+    color: #D83121;
+  }
+  
+  .columnAction {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .columnAction > button {
+    background: transparent;
+    border: none;
+  }
+  
+  .columnAmount {
+    width: 30%;
+  }
+  
+  .columnType {
+    width: 80px;
+    text-align: center;
+  }
