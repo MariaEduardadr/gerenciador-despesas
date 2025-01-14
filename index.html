@@ -2,17 +2,16 @@
 <html lang="pt-br" class="bg-green-50">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>  
 <link rel="stylesheet" href="./styles/output.css">
 <link rel="stylesheet" href="./styles/global.css">
 
     <title>Gerenciador de Despesas</title>
 </head>
 <body>
-    <!--class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center"-->
+   
     <header class="w-full h-[420px]">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <h1  class="text-4xl mt-4 mb-2 font-bold text-green-600">Gerenciador de Despesas</h1>
@@ -24,7 +23,7 @@
                         <span class="incomes">0.00</span>
                     </div>
                     <div class="flex flex-col shadow-md rounded-lg p-2 w-36">
-                        <p>Saídas: R$</p>
+                        <p>Saídas: R$</p>     
                         <span class="expenses">0.00</span>
                     </div>
                     <div class="flex flex-col shadow-md rounded-lg p-2 w-36">
@@ -39,15 +38,15 @@
                         <label for="desc">Descrição</label>
                         <input class="border border-gray-900 rounded p-1.5" type="text" id="desc">
                     </div>
-                    <div  class="valores flex flex-col rounded-lg p-2 w-36">
-                        <label for="valores">Valor</label>
-                        <input class="border border-gray-900 rounded p-1.5" type="number" id="valores">
+                    <div  class="amount flex flex-col rounded-lg p-2 w-36">
+                        <label for="amount">Valor</label>
+                        <input class="border border-gray-900 rounded p-1.5" type="number" id="amount">
                     </div>
                     <div class="type flex flex-col rounded-lg p-2 w-36">
                         <label for="type">Tipo</label>
                         <select class="border border-gray-900 rounded p-1.5" id="type">
                             <option>Entrada</option>
-                            <option>Saida</option>
+                            <option>Saída</option>
                         </select>
                     </div> 
                     <div class="flex flex-col rounded-lg p-2 w-36">
